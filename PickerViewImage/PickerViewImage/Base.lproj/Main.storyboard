@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="PickerViewImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-tb-CS4">
+                                <rect key="frame" x="0.0" y="566" width="414" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="JTS-aQ-lWn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oUn-5R-t9i"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHy-Bh-FzY">
+                                <rect key="frame" x="0.0" y="64" width="414" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="States" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRb-jp-DRJ">
+                                        <rect key="frame" x="5" y="10" width="404" height="50"/>
+                                        <color key="backgroundColor" red="0.39116856420000001" green="0.092208008290000004" blue="0.077597354719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bRc-bU-bhJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" red="0.46931357670000001" green="0.161755972" blue="0.48755884170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.097195983779999995" green="0.27256655169999999" blue="0.29619810810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dRb-jp-DRJ" firstAttribute="leading" secondItem="PHy-Bh-FzY" secondAttribute="leading" constant="5" id="36e-nf-hHG"/>
+                                    <constraint firstItem="dRb-jp-DRJ" firstAttribute="top" secondItem="PHy-Bh-FzY" secondAttribute="top" constant="10" id="3QO-Sf-6ui"/>
+                                    <constraint firstAttribute="trailing" secondItem="dRb-jp-DRJ" secondAttribute="trailing" constant="5" id="EcX-IU-RI8"/>
+                                    <constraint firstAttribute="height" constant="300" id="FoZ-xx-kby"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14418268670000001" green="0.62045923219999999" blue="0.60754659030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sLM-tb-CS4" secondAttribute="bottom" constant="80" id="1BF-DO-3kE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PHy-Bh-FzY" secondAttribute="trailing" id="2ul-8W-EvX"/>
+                            <constraint firstItem="PHy-Bh-FzY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qfz-7S-hLH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sLM-tb-CS4" secondAttribute="trailing" id="VIM-EB-Zr1"/>
+                            <constraint firstItem="PHy-Bh-FzY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="e7j-46-ElN"/>
+                            <constraint firstItem="sLM-tb-CS4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fDG-qS-oeG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblText" destination="dRb-jp-DRJ" id="iiq-t9-IyW"/>
+                        <outlet property="pckVw" destination="sLM-tb-CS4" id="0GJ-fU-9Vc"/>
+                        <outlet property="uiVw" destination="PHy-Bh-FzY" id="XnF-A4-Qzb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994" y="-10"/>
+        </scene>
+    </scenes>
+</document>

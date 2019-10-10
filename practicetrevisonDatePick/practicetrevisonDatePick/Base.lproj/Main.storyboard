@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="practicetrevisonDatePick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UA8-Xd-tAa">
+                                <rect key="frame" x="0.0" y="270" width="414" height="200"/>
+                                <color key="backgroundColor" red="0.62447255130000001" green="0.80930411599999996" blue="0.83360675230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bNs-ne-DU7"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="qCk-lJ-DZw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IcW-tK-aMr"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irh-ho-pgW">
+                                <rect key="frame" x="5" y="54" width="404" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="h9G-SF-bzk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WMD-yQ-qKf">
+                                <rect key="frame" x="87" y="112" width="240" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="TCS-5W-Uhg"/>
+                                    <constraint firstAttribute="width" constant="240" id="ak8-cW-8t8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22352941179999999" green="0.58823529409999997" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Irh-ho-pgW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="1ev-KB-WEr"/>
+                            <constraint firstItem="UA8-Xd-tAa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cbb-nj-Rta"/>
+                            <constraint firstItem="Irh-ho-pgW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="evm-YU-trl"/>
+                            <constraint firstItem="UA8-Xd-tAa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fk2-tU-Uui"/>
+                            <constraint firstItem="WMD-yQ-qKf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gh5-Bg-aAI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Irh-ho-pgW" secondAttribute="trailing" constant="5" id="jiQ-QS-OFJ"/>
+                            <constraint firstItem="WMD-yQ-qKf" firstAttribute="top" secondItem="Irh-ho-pgW" secondAttribute="bottom" constant="8" id="pRZ-cc-jOj"/>
+                            <constraint firstItem="UA8-Xd-tAa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="226" id="x7C-ia-mzl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgVw" destination="WMD-yQ-qKf" id="PDw-3r-Tfr"/>
+                        <outlet property="lblText" destination="Irh-ho-pgW" id="Stl-xh-W5A"/>
+                        <outlet property="picVw" destination="UA8-Xd-tAa" id="68T-Xq-YM5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-461" y="-47"/>
+        </scene>
+    </scenes>
+</document>
