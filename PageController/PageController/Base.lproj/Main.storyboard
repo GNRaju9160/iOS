@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iqw-cK-huT">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PageController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="umbrilla" translatesAutoresizingMaskIntoConstraints="NO" id="kAJ-H0-g1r">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33008878050000001" green="0.44871836349999999" blue="0.39103757020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kAJ-H0-g1r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JJY-CQ-rBd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kAJ-H0-g1r" secondAttribute="bottom" id="Ldf-Yc-qIh"/>
+                            <constraint firstItem="kAJ-H0-g1r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V8s-TE-AUq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kAJ-H0-g1r" secondAttribute="trailing" id="b0S-Tb-JsB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="-337"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QDu-k9-VR8">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="iqw-cK-huT" customClass="ViewController" customModule="PageController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TKN-IQ-eGo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="9" translatesAutoresizingMaskIntoConstraints="NO" id="5Th-7o-03O">
+                                <rect key="frame" x="132" y="817" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.53237821900000004" green="0.67450980390000004" blue="0.56085736269999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Nf6-EC-FZc"/>
+                                    <constraint firstAttribute="height" constant="35" id="bTE-mP-9zh"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.22352941179999999" green="0.58823529409999997" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.33569796750000003" green="0.12716176749999999" blue="0.41965410790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7O-zj-ivV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="773"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A7O-zj-ivV" firstAttribute="top" secondItem="Dqf-uh-Mvg" secondAttribute="top" id="5RT-3C-Y0P"/>
+                            <constraint firstItem="A7O-zj-ivV" firstAttribute="trailing" secondItem="Dqf-uh-Mvg" secondAttribute="trailing" id="CZ5-Vz-kPu"/>
+                            <constraint firstItem="Dqf-uh-Mvg" firstAttribute="bottom" secondItem="5Th-7o-03O" secondAttribute="bottom" constant="10" id="Cwa-52-Z2U"/>
+                            <constraint firstItem="5Th-7o-03O" firstAttribute="centerX" secondItem="TKN-IQ-eGo" secondAttribute="centerX" id="JHs-og-OG3"/>
+                            <constraint firstItem="A7O-zj-ivV" firstAttribute="leading" secondItem="Dqf-uh-Mvg" secondAttribute="leading" id="LFb-Q2-pUm"/>
+                            <constraint firstItem="5Th-7o-03O" firstAttribute="top" secondItem="A7O-zj-ivV" secondAttribute="bottom" id="tpS-wf-6hh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dqf-uh-Mvg"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageController" destination="5Th-7o-03O" id="pmw-HV-TlT"/>
+                        <outlet property="scrView" destination="A7O-zj-ivV" id="CHY-NL-bBe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pa2-TZ-7Hi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289.85507246376812" y="-321.42857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="umbrilla" width="174" height="290"/>
+    </resources>
+</document>
