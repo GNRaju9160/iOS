@@ -125,8 +125,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="205" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IwB-P9-KLh">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="262" width="414" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="XSr-pI-b19"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableViewCell" rowHeight="200" id="cyj-L0-9fA" customClass="TableViewCell" customModule="ApiResponse" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="200"/>
@@ -203,18 +206,62 @@
                                     <outlet property="delegate" destination="iWn-1O-wus" id="CxC-0e-FN2"/>
                                 </connections>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A38-50-jv6">
+                                <rect key="frame" x="20" y="94" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.2166418135" green="0.62150377040000004" blue="0.98610347509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fwK-HK-YbH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Sn-NF-BC1">
+                                <rect key="frame" x="20" y="144" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.2166418135" green="0.62150377040000004" blue="0.98610347509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KGB-da-3Ig"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-bU-nHy">
+                                <rect key="frame" x="60" y="199" width="294" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wJ3-nr-g6z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSave:" destination="iWn-1O-wus" eventType="touchUpInside" id="vTz-6R-ANz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Op-td-8qt" firstAttribute="trailing" secondItem="4Sn-NF-BC1" secondAttribute="trailing" constant="20" id="1TR-gp-TRy"/>
+                            <constraint firstItem="6Op-td-8qt" firstAttribute="trailing" secondItem="0hR-bU-nHy" secondAttribute="trailing" constant="60" id="9kC-ct-6DY"/>
                             <constraint firstItem="6Op-td-8qt" firstAttribute="trailing" secondItem="IwB-P9-KLh" secondAttribute="trailing" id="DE8-vF-Mkg"/>
+                            <constraint firstItem="6Op-td-8qt" firstAttribute="trailing" secondItem="A38-50-jv6" secondAttribute="trailing" constant="20" id="Ds8-BT-N7e"/>
                             <constraint firstItem="IwB-P9-KLh" firstAttribute="leading" secondItem="6Op-td-8qt" secondAttribute="leading" id="Fsz-48-NTf"/>
+                            <constraint firstItem="A38-50-jv6" firstAttribute="top" secondItem="6Op-td-8qt" secondAttribute="top" constant="50" id="HuK-u0-cAD"/>
+                            <constraint firstItem="0hR-bU-nHy" firstAttribute="leading" secondItem="6Op-td-8qt" secondAttribute="leading" constant="60" id="XPb-NL-nuS"/>
                             <constraint firstItem="6Op-td-8qt" firstAttribute="bottom" secondItem="IwB-P9-KLh" secondAttribute="bottom" id="YVb-W4-BEC"/>
-                            <constraint firstItem="IwB-P9-KLh" firstAttribute="top" secondItem="6Op-td-8qt" secondAttribute="top" id="gcF-J1-fjj"/>
+                            <constraint firstItem="4Sn-NF-BC1" firstAttribute="top" secondItem="A38-50-jv6" secondAttribute="bottom" constant="10" id="eJw-VE-p96"/>
+                            <constraint firstItem="0hR-bU-nHy" firstAttribute="top" secondItem="4Sn-NF-BC1" secondAttribute="bottom" constant="15" id="fXl-gB-z4C"/>
+                            <constraint firstItem="A38-50-jv6" firstAttribute="leading" secondItem="6Op-td-8qt" secondAttribute="leading" constant="20" id="yyr-Uj-Xer"/>
+                            <constraint firstItem="4Sn-NF-BC1" firstAttribute="leading" secondItem="6Op-td-8qt" secondAttribute="leading" constant="20" id="zQj-3b-13A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Op-td-8qt"/>
                     </view>
                     <connections>
                         <outlet property="tblView" destination="IwB-P9-KLh" id="1hu-p7-r4w"/>
+                        <outlet property="txtFldName" destination="A38-50-jv6" id="P5h-ew-OYn"/>
+                        <outlet property="txtFldPsw" destination="4Sn-NF-BC1" id="nzU-T4-LCi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Km-2K-cOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
