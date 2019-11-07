@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  CreateAccountUserDefaults
-//
-//  Created by Training on 02/11/19.
-//  Copyright © 2019 Training. All rights reserved.
-//
+
 
 import UIKit
 import CoreData
@@ -17,7 +11,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -48,20 +42,17 @@ class ViewController: UIViewController {
             alert.addAction(ok)
             
             self.present(alert, animated: true, completion: nil)
-            
-      
+   
     }
+     
+        
         let nextVc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         self.navigationController?.pushViewController(nextVc, animated: true)
         
     }
-    @IBAction func btnHaveAcc(_ sender: Any) {
-        let nextVc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        self.navigationController?.pushViewController(nextVc, animated: true)
-        
-        
-    }
-    
-    
+
+
 }
+    
+
 
