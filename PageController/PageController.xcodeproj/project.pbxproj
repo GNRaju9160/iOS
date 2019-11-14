@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86891AEA237D7B2300EA0582 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86891AE9237D7B2200EA0582 /* ViewController2.swift */; };
 		869DAB52235B14DB001A3F01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869DAB51235B14DB001A3F01 /* AppDelegate.swift */; };
 		869DAB54235B14DB001A3F01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869DAB53235B14DB001A3F01 /* ViewController.swift */; };
 		869DAB57235B14DB001A3F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869DAB55235B14DB001A3F01 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86891AE9237D7B2200EA0582 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		869DAB4E235B14DB001A3F01 /* PageController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		869DAB51235B14DB001A3F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		869DAB53235B14DB001A3F01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				869DAB51235B14DB001A3F01 /* AppDelegate.swift */,
 				869DAB53235B14DB001A3F01 /* ViewController.swift */,
+				86891AE9237D7B2200EA0582 /* ViewController2.swift */,
 				869DAB55235B14DB001A3F01 /* Main.storyboard */,
 				869DAB58235B14DC001A3F01 /* Assets.xcassets */,
 				869DAB5A235B14DC001A3F01 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				869DAB54235B14DB001A3F01 /* ViewController.swift in Sources */,
 				869DAB52235B14DB001A3F01 /* AppDelegate.swift in Sources */,
+				86891AEA237D7B2300EA0582 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

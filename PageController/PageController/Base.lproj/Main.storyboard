@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iqw-cK-huT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OjP-NM-dqu">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-426" y="-337"/>
+            <point key="canvasLocation" x="-428" y="-310"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QDu-k9-VR8">
@@ -54,7 +54,7 @@
                                 <color key="pageIndicatorTintColor" red="0.22352941179999999" green="0.58823529409999997" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.33569796750000003" green="0.12716176749999999" blue="0.41965410790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7O-zj-ivV">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7O-zj-ivV">
                                 <rect key="frame" x="0.0" y="44" width="414" height="773"/>
                             </scrollView>
                         </subviews>
@@ -77,6 +77,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pa2-TZ-7Hi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289.85507246376812" y="-321.42857142857139"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="ZeA-t1-50w">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="OjP-NM-dqu" customClass="ViewController2" customModule="PageController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="weS-pY-Yxu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zw4-Xg-sKL">
+                                <rect key="frame" x="30" y="458" width="354" height="404"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="I1A-Fq-8eQ">
+                                        <rect key="frame" x="127" y="10" width="100" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="94s-9o-uOh"/>
+                                            <constraint firstAttribute="width" constant="100" id="sbQ-7C-EGL"/>
+                                        </constraints>
+                                        <color key="pageIndicatorTintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="I1A-Fq-8eQ" firstAttribute="top" secondItem="zw4-Xg-sKL" secondAttribute="top" constant="10" id="Hqd-7K-nKg"/>
+                                    <constraint firstItem="I1A-Fq-8eQ" firstAttribute="centerX" secondItem="zw4-Xg-sKL" secondAttribute="centerX" id="ugm-dk-PHC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0LQ-pI-GKp">
+                                <rect key="frame" x="0.0" y="144" width="414" height="314"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qft-Ut-Zjw">
+                                <rect key="frame" x="334" y="74" width="60" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GEV-eX-H7a"/>
+                                    <constraint firstAttribute="width" constant="60" id="Vw9-lL-SyL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.9256146247" green="0.49143270519999999" blue="0.73113694289999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92561462468422961" green="0.49143270517562854" blue="0.73113694289065323" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="z13-RT-Y4D" firstAttribute="bottom" secondItem="zw4-Xg-sKL" secondAttribute="bottom" id="Aqb-XD-x1Y"/>
+                            <constraint firstItem="z13-RT-Y4D" firstAttribute="trailing" secondItem="Qft-Ut-Zjw" secondAttribute="trailing" constant="20" id="Cwz-zC-yZF"/>
+                            <constraint firstItem="zw4-Xg-sKL" firstAttribute="leading" secondItem="z13-RT-Y4D" secondAttribute="leading" constant="30" id="KXb-So-9ZW"/>
+                            <constraint firstItem="Qft-Ut-Zjw" firstAttribute="top" secondItem="z13-RT-Y4D" secondAttribute="top" constant="30" id="Squ-Dw-twO"/>
+                            <constraint firstItem="0LQ-pI-GKp" firstAttribute="leading" secondItem="z13-RT-Y4D" secondAttribute="leading" id="U6z-Ar-2c9"/>
+                            <constraint firstItem="zw4-Xg-sKL" firstAttribute="top" secondItem="0LQ-pI-GKp" secondAttribute="bottom" id="bib-cF-be8"/>
+                            <constraint firstItem="0LQ-pI-GKp" firstAttribute="top" secondItem="Qft-Ut-Zjw" secondAttribute="bottom" constant="40" id="lUW-oG-Wmu"/>
+                            <constraint firstItem="z13-RT-Y4D" firstAttribute="trailing" secondItem="zw4-Xg-sKL" secondAttribute="trailing" constant="30" id="reN-xv-Ad8"/>
+                            <constraint firstItem="zw4-Xg-sKL" firstAttribute="top" secondItem="z13-RT-Y4D" secondAttribute="top" constant="414" id="w4b-qO-Q0q"/>
+                            <constraint firstItem="0LQ-pI-GKp" firstAttribute="trailing" secondItem="z13-RT-Y4D" secondAttribute="trailing" id="z6n-GW-cgP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z13-RT-Y4D"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageCont2" destination="I1A-Fq-8eQ" id="Ssa-hK-5RX"/>
+                        <outlet property="scrVw2" destination="0LQ-pI-GKp" id="yAQ-yv-oFB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zbd-bo-zdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="-310"/>
         </scene>
     </scenes>
     <resources>
