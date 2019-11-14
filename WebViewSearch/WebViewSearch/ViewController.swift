@@ -2,55 +2,35 @@
 //  ViewController.swift
 //  WebViewSearch
 //
-//  Created by Training on 15/10/19.
+//  Created by Training on 07/11/19.
 //  Copyright © 2019 Training. All rights reserved.
 //
 
 import UIKit
 import WebKit
-
-class ViewController: UIViewController {
+class ViewController: UIViewController,WKNavigationDelegate {
+    @IBOutlet weak var webView: WKWebView!
     
-       var webView: WKWebView!
-    
-//    @IBOutlet weak var webView: WKWebView!
-
-    override func loadView() {
-        webView = WKWebView()
-        view = webView
-    }
-    
+    @IBOutlet weak var actIndi: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+        // 1
         let url = URL(string: "https://www.google.com")!
         webView.load(URLRequest(url: url))
         
-//      let request = URLRequest(url: url))
-        
-       // webView.loadHTMLString("Hello World", baseURL: nil)
-      
-        
     }
-    @IBAction func actionBack(_ sender: Any) {
-        if webView.canGoBack {
-        webView.goBack()
-        }
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+      actIndi.startAnimating()
     }
-    @IBAction func actionForward(_ sender: Any) {
-        if webView.canGoForward {
-            webView.goForward()
-        }
-        
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        actIndi.stopAnimating()
     }
-    @IBAction func actionRefresh(_ sender: Any) {
-        webView.reload()
-        
-    }
-    @IBAction func actionStop(_ sender: Any) {
-        webView.stopLoading()
     }
     
+  
 
-}
+
 
