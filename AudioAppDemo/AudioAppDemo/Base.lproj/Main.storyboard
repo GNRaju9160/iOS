@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uvH-Qh-Wr1">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7NT-VA-WhR">
+            <objects>
+                <viewController id="uvH-Qh-Wr1" customClass="ViewController" customModule="AudioAppDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7B7-s0-H0N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i1" translatesAutoresizingMaskIntoConstraints="NO" id="NT9-rg-36T">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Iz-MD-VyT">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X8h-K6-WCJ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem tag="2" systemItem="play" id="lGJ-Ze-uSF">
+                                        <connections>
+                                            <action selector="btnPLay:" destination="uvH-Qh-Wr1" id="ji4-ev-TxS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Zvc-g7-erw"/>
+                                    <barButtonItem systemItem="pause" id="Eq1-DP-jPM">
+                                        <connections>
+                                            <action selector="btnPause:" destination="uvH-Qh-Wr1" id="HTJ-ZG-Tsx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DT9-sP-xw8"/>
+                                    <barButtonItem systemItem="refresh" id="ty4-u0-eDG">
+                                        <connections>
+                                            <action selector="restartSong:" destination="uvH-Qh-Wr1" id="kDO-3O-sa7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-319" translatesAutoresizingMaskIntoConstraints="NO" id="PFG-Rq-1f7">
+                                <rect key="frame" x="20" y="94" width="374" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="LHN-BI-3Pq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PFG-Rq-1f7" firstAttribute="leading" secondItem="Wjp-AQ-btB" secondAttribute="leading" constant="20" id="0AT-cs-xnk"/>
+                            <constraint firstItem="NT9-rg-36T" firstAttribute="leading" secondItem="Wjp-AQ-btB" secondAttribute="leading" id="3GY-uV-SwN"/>
+                            <constraint firstItem="8Iz-MD-VyT" firstAttribute="bottom" secondItem="Wjp-AQ-btB" secondAttribute="bottom" id="5z4-mI-toe"/>
+                            <constraint firstItem="8Iz-MD-VyT" firstAttribute="trailing" secondItem="Wjp-AQ-btB" secondAttribute="trailing" id="8M2-td-nlV"/>
+                            <constraint firstItem="Wjp-AQ-btB" firstAttribute="trailing" secondItem="NT9-rg-36T" secondAttribute="trailing" id="BaQ-CR-Rw5"/>
+                            <constraint firstItem="NT9-rg-36T" firstAttribute="top" secondItem="Wjp-AQ-btB" secondAttribute="top" id="IBM-7C-0Qs"/>
+                            <constraint firstItem="Wjp-AQ-btB" firstAttribute="trailing" secondItem="PFG-Rq-1f7" secondAttribute="trailing" constant="20" id="Qnk-cu-EyX"/>
+                            <constraint firstItem="NT9-rg-36T" firstAttribute="bottom" secondItem="Wjp-AQ-btB" secondAttribute="bottom" id="jak-sf-SS3"/>
+                            <constraint firstItem="PFG-Rq-1f7" firstAttribute="top" secondItem="Wjp-AQ-btB" secondAttribute="top" constant="50" id="nFF-zU-eYg"/>
+                            <constraint firstItem="8Iz-MD-VyT" firstAttribute="leading" secondItem="Wjp-AQ-btB" secondAttribute="leading" id="whK-CT-nEO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wjp-AQ-btB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2f-Bj-Mox" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="i1" width="168" height="299"/>
+        <image name="images-319" width="291" height="173"/>
+    </resources>
+</document>
