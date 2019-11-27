@@ -1,0 +1,6 @@
+framework module Pods_PinterestCollectionView {
+  umbrella header "Pods-PinterestCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}
